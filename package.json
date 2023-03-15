@@ -1,0 +1,32 @@
+{
+  "name": "presence",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "xo"
+  },
+  "packageManager": "yarn@3.3.1",
+  "dependencies": {
+    "heliograph": "^6.0.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "xo": "^0.53.1"
+  },
+  "xo": {
+    "prettier": true,
+    "space": 2,
+    "semicolon": false,
+    "globals": [
+      "WebSocket",
+      "window",
+      "document"
+    ],
+    "rules": {
+      "no-unreachable-loop": "off",
+      "no-unused-expressions": "off",
+      "import/no-anonymous-default-export": "off",
+      "import/no-unassigned-import": "off"
+    }
+  }
+}
